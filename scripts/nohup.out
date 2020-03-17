@@ -1,0 +1,98 @@
+2020-03-06 05:42:33.760868: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-03-06 05:42:33.782685: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:d8:00.0
+2020-03-06 05:42:33.782981: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-03-06 05:42:33.786705: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-03-06 05:42:33.790081: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-03-06 05:42:33.799478: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-03-06 05:42:33.809402: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-03-06 05:42:33.816037: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-03-06 05:42:33.830261: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-06 05:42:33.831918: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-03-06 05:42:33.832257: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-03-06 05:42:33.846833: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2300000000 Hz
+2020-03-06 05:42:33.854635: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55e0bc735260 executing computations on platform Host. Devices:
+2020-03-06 05:42:33.854668: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-03-06 05:42:34.220031: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55e0bc736ae0 executing computations on platform CUDA. Devices:
+2020-03-06 05:42:34.220090: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-03-06 05:42:34.221053: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:d8:00.0
+2020-03-06 05:42:34.221130: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-03-06 05:42:34.221149: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-03-06 05:42:34.221165: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-03-06 05:42:34.221180: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-03-06 05:42:34.221195: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-03-06 05:42:34.221210: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-03-06 05:42:34.221225: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-06 05:42:34.222700: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-03-06 05:42:34.223418: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-03-06 05:42:34.224803: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-03-06 05:42:34.224821: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-03-06 05:42:34.224830: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-03-06 05:42:34.226418: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14249 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:d8:00.0, compute capability: 7.5)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/logging/__init__.py", line 1034, in emit
+    msg = self.format(record)
+  File "/opt/conda/lib/python3.7/logging/__init__.py", line 880, in format
+    return fmt.format(record)
+  File "/opt/conda/lib/python3.7/logging/__init__.py", line 619, in format
+    record.message = record.getMessage()
+  File "/opt/conda/lib/python3.7/logging/__init__.py", line 380, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "basicModel.py", line 27, in <module>
+    logging.info(concentration_data_array.shape, relaxed_data_array.shape)
+Message: (2160, 220, 340, 42)
+Arguments: ((2160, 220, 340, 42),)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/logging/__init__.py", line 1034, in emit
+    msg = self.format(record)
+  File "/opt/conda/lib/python3.7/logging/__init__.py", line 880, in format
+    return fmt.format(record)
+  File "/opt/conda/lib/python3.7/logging/__init__.py", line 619, in format
+    record.message = record.getMessage()
+  File "/opt/conda/lib/python3.7/logging/__init__.py", line 380, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "basicModel.py", line 28, in <module>
+    logging.info(len(concentration_data_array), len(relaxed_data_array))
+Message: 2160
+Arguments: (2160,)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/logging/__init__.py", line 1034, in emit
+    msg = self.format(record)
+  File "/opt/conda/lib/python3.7/logging/__init__.py", line 880, in format
+    return fmt.format(record)
+  File "/opt/conda/lib/python3.7/logging/__init__.py", line 619, in format
+    record.message = record.getMessage()
+  File "/opt/conda/lib/python3.7/logging/__init__.py", line 380, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "basicModel.py", line 31, in <module>
+    logging.info(X.shape, Y.shape)
+Message: (4320, 220, 340, 42)
+Arguments: ((4320, 1),)
+Traceback (most recent call last):
+  File "basicModel.py", line 61, in <module>
+    model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=10, batch_size=32, callbacks=callbacks_list, shuffle=True)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training.py", line 728, in fit
+    use_multiprocessing=use_multiprocessing)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training_v2.py", line 224, in fit
+    distribution_strategy=strategy)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training_v2.py", line 547, in _process_training_inputs
+    use_multiprocessing=use_multiprocessing)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training_v2.py", line 594, in _process_inputs
+    steps=steps)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training.py", line 2472, in _standardize_user_data
+    exception_prefix='input')
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training_utils.py", line 574, in standardize_input_data
+    str(data_shape))
+ValueError: Error when checking input: expected conv2d_input to have shape (29, 43, 42) but got array with shape (220, 340, 42)
